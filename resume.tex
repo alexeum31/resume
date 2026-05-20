@@ -1,0 +1,290 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Alex Eum} \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ 917-913-9466 ~ \href{mailto:ae2576@princeton.edu}{\raisebox{-0.2\height}\faEnvelope\  \underline{ae2576@princeton.edu}} ~ 
+    \href{https://linkedin.com/in//}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/alexander-eum}}  ~
+    \href{https://github.com/alexeum31}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/alexeum31}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Princeton University}{Sep. 2022 -- May 2026}
+      {Bachelor of Arts in Computer Science}{Princeton, NJ}
+      \begin{itemize}[itemsep=-5pt, parsep=5pt]
+                \item\small GPA: 3.7/4.0
+                \item\small Organizations: Poker Club, Chess Club, IM Basketball/Soccer, Colonial Eating Club, Powerlifting/Bodybuilding Club
+                
+            \end{itemize}
+  \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+% \section{Relevant Coursework}
+    % %\resumeSubHeadingListStart
+    %     \begin{multicols}{3}
+    %         \begin{itemize}[itemsep=-5pt, parsep=5pt]
+    %             \item Distributed Systems (TA)
+    %             \item Operating Systems (TA)
+    %             \item\small Data Structures \& Algorithms (TA)
+    %             \item Programming Systems (TA)
+    %             \item Moments of Computing (Graduate)
+    %             \item Computer Networks (TBD)
+    %             \item Computer Architecture 
+    %             \item Functional Programming 
+    %             \item Advanced Program Techniques
+    %             \item Discrete Math
+    %             \item Machine Learning
+    %             \item Linear Algebra
+    %         \end{itemize}
+    %     \end{multicols}
+    %     \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+  \resumeSubheading
+      {Optiver}{Aug. 2026}
+      {Software Engineer}{New York City, NY}
+
+       
+    \resumeSubheading
+      {IMC Trading}{Jun. 2025 -- Aug. 2025}
+      {Software Engineer Intern}{Chicago, IL}
+      \resumeItemListStart
+      \resumeItem{Developing CME exposure-based quote grouping system using \textbf{C++23}, enabling rapid quote cancellation to prevent adverse selection during simultaneous shifts in theoretical values of thousands of US Treasuries and commodities options}
+      \resumeItem{Conducted component and end-to-end dev tests that ensured correctness within a simulated production environment}
+      \resumeItem{Presented the project’s impact and provided background on options theory to leaders across the execution organization}
+       \resumeItemListEnd
+
+
+    
+    \resumeSubheading
+      {Meta}{May 2024 -- Aug. 2024}
+      {Software Engineer Intern}{Menlo Park, California}
+      \resumeItemListStart
+        \resumeItem{Constructed ML holdout infrastructure from scratch using \textbf{Hack/PHP}, achieving a \textbf{54\%} reduction in False Discovery Rate across all scam detection models, with robust extensibility to support models from external organizations}
+        \resumeItem{Analyzed \textbf{XGBoost} models through \textbf{Python dataswarm} pipelines that streamlined logging into Hive tables. Ran \textbf{SQL} queries to track FDR changes across several scam detection models and displayed findings on a dashboard}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {LG U+}{Jun. 2023 -- Aug. 2023}
+      {Software Engineer Intern}{Yongsan-Gu, Seoul}
+      \resumeItemListStart
+        \resumeItem{Utilized \textbf{Google Analytics} to identify pain points, increasing \textbf{user flow by 34\%} by pinpointing key user-facing bugs}
+        \resumeItem{Optimized backend API performance, reducing response times by \textbf{17\%} through targeted endpoint/test refactoring}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Cubits.AI}{May 2023 -- Jun. 2023}
+      {Software Engineer Intern}{Virtual}
+      \resumeItemListStart
+        \resumeItem{Developed a chat-driven mobile application using \textbf{ReactJS} from scratch to sell reverse-classroom style college courses}
+        \resumeItem{Engineered prompts to query \textbf{OpenAI API} Platform, created a chatbot that summarizes videos and creates quizzes}
+      \resumeItemListEnd
+
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+          {\textbf{Optimizing the BBR Algorithm for Video Streaming} $|$ \emph{C, Mininet}}{Jan. 2025 -- Apr. 2025}
+          \resumeItemListStart
+            \resumeItem{\textbf{Authored research paper} enhancing \textbf{BBR-S} TCP congestion control by optimizing bottleneck bandwidth estimation}
+            \resumeItem{Determined optimal $hist\_percentile$ interval \textbf{(85, 95]}, reducing bufferbloat and RTT while maintaining high goodput}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+
+          
+           \resumeProjectHeading
+          {\textbf{C-to-PDP-11 Compiler and Assembler} $|$ \emph{LLVM, Python, C/C++, Assembly}}{Mar. 2025 -- Apr. 2025}
+          \resumeItemListStart
+            \resumeItem{Developed a pipeline to compile C code PDP-11 assembly code by utilizing \textbf{Clang} (LLVM) and \textbf{Python llvmlite}}
+            \resumeItem{Utilized \textbf{macro11} to implement an assembler that converts \textbf{PDP-11 assembly} code to machine code and emulated it}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          
+          \resumeProjectHeading
+          {\textbf{Xv6 Operating System} $|$ \emph{C}}{Jan. 2025 -- Apr. 2025}
+          \resumeItemListStart
+            \resumeItem{Developed OS that implements \textbf{virtual memory} with file-backed, shared mappings, a \textbf{stride scheduler} that uses dynamic process participation to fairly schedule processes, and system calls to \textbf{spawn} and \textbf{destroy threads}}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+
+          
+          \resumeProjectHeading
+          {\textbf{Raft Consensus Algorithm} $|$ \emph{Go}}{Jan. 2025 -- Mar. 2025}
+          \resumeItemListStart
+            \resumeItem{Developed Raft’s \textbf{distributed consensus} algorithm, providing fault tolerant leader election and log replication that achieves strict consistency (\textbf{linearizability}) and ensures strong correctness guarantees under \textbf{concurrency}}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          
+          
+          \resumeProjectHeading
+          {\textbf{Moogle Web Crawler} $|$ \emph{OCaml}}{Oct. 2024 -- Nov. 2024}
+          \resumeItemListStart
+            \resumeItem{Engineered a Scalable Web Crawler to build an index mapping words to web pages using recursive link exploration}
+            \resumeItem{Developed a \textbf{PageRank}-inspired algorithm leveraging link-based propagation to calculate importance scores}
+            \resumeItemListEnd 
+          \vspace{-13pt}
+
+        \resumeProjectHeading
+          {\textbf{Order Book} $|$ \emph{Python}}{May 2024 -- Jun. 2024}
+          \resumeItemListStart
+            \resumeItem{Developed an order book that supports Good Till Cancel and Fill and Kill order types using the price-time algorithm}
+          \resumeItemListEnd
+           
+          
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C++, C, Python, Java, Golang, OCaml, SQL, Hack, PHP, HTML/CSS, JavaScript, JSX, Assembly} \\
+     \textbf{Frameworks}{: Flask, React, Node.js, Postman} \\
+     \textbf{Developer Tools}{: Linux, Git, MongoDB, REST API, PostgreSQL, Qt (via PyQt5), Google Analytics, AJAX, VS Code} \\
+     \textbf{Libraries}{: jQuery, YouTube API, PyMongo, PyTorch, Pandas, NumPy, Matplotlib, Bootstrap} \\
+    }} 
+ \end{itemize}
+ \vspace{-16pt}
+
+
+
+\end{document}
+
